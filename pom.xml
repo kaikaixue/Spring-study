@@ -13,6 +13,9 @@
         <module>spring-02-hello</module>
         <module>spring-02-ioc2</module>
         <module>spring-04-di</module>
+        <module>spring-05-autowire</module>
+        <module>spring-06-anno</module>
+        <module>spring-07-appconfig</module>
     </modules>
 
     <properties>
@@ -51,9 +54,30 @@
             <scope>provided</scope>
         </dependency>
 
-
-
     </dependencies>
+
+    <!--  约定大于配置  -->
+    <!--  在build中配置resources,来防止我们资源导出失败的问题  -->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 
 
 </project>
