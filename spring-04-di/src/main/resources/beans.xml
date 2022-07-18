@@ -6,9 +6,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.xkk.pojo.User" p:age="21" p:name="xkk"/>
+<!--    <bean id="user" class="com.xkk.pojo.User" p:age="21" p:name="xkk"/>-->
 
-    <bean id="user1" class="com.xkk.pojo.User" c:name="qqq" c:_1="21"/>
+<!--    <bean id="user1" class="com.xkk.pojo.User" c:name="qqq" c:_1="21"/>-->
 
 
 
