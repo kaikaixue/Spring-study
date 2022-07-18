@@ -7,8 +7,9 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--指定注解扫描包-->
+
     <context:annotation-config/>
 
+    <!--指定注解扫描包-->
     <context:component-scan base-package="com.xkk"/>
 </beans>
