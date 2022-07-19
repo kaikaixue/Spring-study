@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+    <!--    設置 settings-->
+    <settings>
+        <!--日志工厂-->
+        <!-- Java自带 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- Log4j -->
+        <!--        <setting name="logImpl" value="LOG4J"/>-->
+        <!--        数据库中 _ 转为驼峰   -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.xkk.pojo"/>
+    </typeAliases>
+</configuration>
